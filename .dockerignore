@@ -1,0 +1,10 @@
+*
+!requirements.txt
+!engine/
+!engine/engine.cpp
+!backend/
+!backend/*.py
+!content/
+!content/lessons.json
+!gunicorn.conf.py
+!Dockerfile

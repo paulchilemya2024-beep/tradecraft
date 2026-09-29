@@ -1,0 +1,5 @@
+Flask>=3.1,<4
+SQLAlchemy>=2.0,<3
+psycopg[binary]>=3.2,<4
+PyJWT[crypto]>=2.10,<3
+gunicorn>=23,<24; sys_platform != 'win32'

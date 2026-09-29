@@ -1,0 +1,17 @@
+services:
+  - type: web
+    name: tradecraft-api
+    runtime: docker
+    plan: free
+    healthCheckPath: /api/health
+    envVars:
+      - key: PUBLIC_DEPLOYMENT
+        value: "true"
+      - key: MARKET_MODE
+        value: demo
+      - key: DATABASE_URL
+        sync: false
+      - key: SUPABASE_URL
+        sync: false
+      - key: ALLOWED_ORIGINS
+        sync: false
